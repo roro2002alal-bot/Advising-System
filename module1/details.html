@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advising Session Details – Academic Advising System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Shared stylesheet -->
+    <link rel="stylesheet" href="../assets/styles.css">
+
+    <!-- Safety styling in case styles.css is empty -->
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.5; }
+        header { border-bottom: 1px solid #ccc; margin-bottom: 15px; padding-bottom: 8px; }
+        nav a { margin-right: 10px; text-decoration: none; font-size: 0.9rem; }
+        nav a:hover { text-decoration: underline; }
+        .breadcrumb { font-size: 0.85rem; color: #666; margin-bottom: 10px; }
+        .section-box { border: 1px dashed #999; padding: 15px; margin: 15px 0; }
+        .detail-row { margin: 4px 0; }
+        .label { font-weight: bold; display: inline-block; width: 160px; }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Advising Session Details</h1>
+    <p>
+        This page shows the details of a single advising session between a student
+        and an academic advisor.
+    </p>
+
+    <!-- Global navigation -->
+    <nav>
+        <a href="../index.html">Sitemap</a>
+        <a href="../auth/login.html">Login</a>
+        <a href="../auth/register.html">Register</a>
+        <a href="../dashboard/dashboard.html">Dashboard</a>
+        <a href="list.html">Advising Sessions (CRUD)</a>
+        <a href="../module2/list.html">Degree Plans</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">Home &gt; Advising Sessions &gt; Details</div>
+
+    <!-- Session details placeholder -->
+    <div class="section-box">
+        <h2>Session Information (Placeholder)</h2>
+        <p>
+            This section represents how the details of one advising session will be
+            displayed in the real system.
+        </p>
+
+        <!-- Example static data just to show layout -->
+        <div class="detail-row">
+            <span class="label">Session ID:</span>
+            <span>AS-001</span>
+        </div>
+        <div class="detail-row">
+            <span class="label">Student Name:</span>
+            <span>Example Student</span>
+        </div>
+        <div class="detail-row">
+            <span class="label">Advisor Name:</span>
+            <span>Advisor Example</span>
+        </div>
+        <div class="detail-row">
+            <span class="label">Date &amp; Time:</span>
+            <span>2025-01-15 10:30 AM</span>
+        </div>
+        <div class="detail-row">
+            <span class="label">Session Type:</span>
+            <span>Academic Plan / Follow-up</span>
+        </div>
+        <div class="detail-row">
+            <span class="label">Risk Level:</span>
+            <span>Medium</span>
+        </div>
+        <div class="detail-row">
+            <span class="label">Summary Notes:</span>
+            <span>
+                Placeholder text describing what was discussed during the session,
+                recommended actions, and any follow-up tasks.
+            </span>
+        </div>
+    </div>
+
+    <!-- Actions -->
+    <div class="section-box">
+        <h2>Available Actions (Storyboard)</h2>
+        <p>From this page, the advisor can perform the following actions:</p>
+        <ul>
+            <li><a href="edit.html">Edit this advising session</a></li>
+            <li><a href="list.html">Return to the sessions list</a></li>
+            <li>In a real system, a <em>Delete</em> button or link might also appear here.</li>
+        </ul>
+    </div>
+
+    <!-- Storyboard explanation -->
+    <div class="section-box">
+        <h2>Storyboard Note</h2>
+        <p>
+            This page is static and does not pull real data. In the final implementation,
+            the system would load details for a particular session from the
+            <em>advising_sessions</em> table (and related <em>students</em> and
+            <em>advisors</em> records) and then render them here.
+        </p>
+    </div>
+
+    <!-- Navigation back links -->
+    <p>
+        <a href="list.html">Back to Sessions List</a><br>
+        <a href="../dashboard/dashboard.html">Back to Dashboard</a><br>
+        <a href="../index.html">Back to Sitemap</a>
+    </p>
+
+</main>
+
+<footer style="margin-top: 30px; font-size: 0.8rem; color: #555;">
+    <p>Academic Advising &amp; Progress Tracking System – Session Details Storyboard</p>
+</footer>
+
+</body>
+</html>
+

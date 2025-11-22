@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Degree Plans – List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Shared stylesheet -->
+    <link rel="stylesheet" href="../assets/styles.css">
+
+    <!-- Safety styling in case styles.css is empty -->
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.5;}
+        header { border-bottom: 1px solid #ccc; margin-bottom: 15px; padding-bottom: 8px;}
+        nav a { margin-right: 10px; text-decoration: none; font-size: 0.9rem;}
+        nav a:hover { text-decoration: underline;}
+        .breadcrumb { font-size: 0.85rem; color: #666; margin-bottom: 10px;}
+        .section-box { border: 1px dashed #999; padding: 15px; margin: 15px 0;}
+        table { width: 100%; border-collapse: collapse; margin-top: 10px;}
+        th, td { border: 1px solid #ccc; padding: 8px; font-size: 0.9rem;}
+        th { background-color: #f5f5f5; text-align: left;}
+        .actions a { margin-right: 8px; }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Degree Plans – List</h1>
+    <p>
+        This page displays the list of degree plans available for students.
+        Degree plans help track academic requirements and student progress.
+    </p>
+
+    <!-- Global navigation -->
+    <nav>
+        <a href="../index.html">Sitemap</a>
+        <a href="../auth/login.html">Login</a>
+        <a href="../auth/register.html">Register</a>
+        <a href="../dashboard/dashboard.html">Dashboard</a>
+        <a href="../module1/list.html">Advising Sessions (CRUD)</a>
+        <a href="list.html">Degree Plans</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">Home &gt; Degree Plans &gt; List</div>
+
+    <!-- Degree Plans Table -->
+    <div class="section-box">
+        <h2>Degree Plans Table (Placeholder)</h2>
+        <p>
+            This table represents how degree plans will appear in the real system.
+            Students’ progress will link to these plans.
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Plan ID</th>
+                    <th>Major</th>
+                    <th>Total Credits</th>
+                    <th>Required GPA</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>DP-001</td>
+                    <td>Computer Science</td>
+                    <td>132</td>
+                    <td>2.00</td>
+                    <td class="actions">
+                        <a href="create.html">View</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>DP-002</td>
+                    <td>Information Technology</td>
+                    <td>130</td>
+                    <td>2.00</td>
+                    <td class="actions">
+                        <a href="create.html">View</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            In the final application, this table would pull data from the
+            <em>degree_plans</em> table in the database.
+        </p>
+    </div>
+
+    <!-- Common Actions -->
+    <div class="section-box">
+        <h2>Common Actions</h2>
+        <ul>
+            <li><a href="create.html">Create New Degree Plan</a></li>
+            <li>View details of any degree plan</li>
+            <li>Edit or update degree plan requirements</li>
+        </ul>
+    </div>
+
+    <!-- Navigation Back -->
+    <p>
+        <a href="../dashboard/dashboard.html">Back to Dashboard</a><br>
+        <a href="../index.html">Back to Sitemap</a>
+    </p>
+
+</main>
+
+<footer style="margin-top: 30px; font-size: 0.8rem; color: #555;">
+    <p>Academic Advising &amp; Progress Tracking System – Degree Plans List Storyboard</p>
+</footer>
+
+</body>
+</html>

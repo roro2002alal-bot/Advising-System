@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Advising Session – Academic Advising System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Shared stylesheet -->
+    <link rel="stylesheet" href="../assets/styles.css">
+
+    <!-- Safety styling in case styles.css is empty -->
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.5;}
+        header { border-bottom: 1px solid #ccc; margin-bottom: 15px; padding-bottom: 8px;}
+        nav a { margin-right: 10px; text-decoration: none; font-size: 0.9rem;}
+        nav a:hover { text-decoration: underline;}
+        .breadcrumb { font-size: 0.85rem; color: #666; margin-bottom: 10px;}
+        .section-box { border: 1px dashed #999; padding: 15px; margin: 15px 0;}
+        ul { margin-left: 20px; }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Create Advising Session</h1>
+    <p>
+        This page represents the form used by academic advisors to schedule
+        a new advising session with a student.
+    </p>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="../index.html">Sitemap</a>
+        <a href="../auth/login.html">Login</a>
+        <a href="../auth/register.html">Register</a>
+        <a href="../dashboard/dashboard.html">Dashboard</a>
+        <a href="list.html">Advising Sessions (CRUD)</a>
+        <a href="../module2/list.html">Degree Plans</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">Home &gt; Advising Sessions &gt; Create</div>
+
+    <!-- Create Form Placeholder -->
+    <div class="section-box">
+        <h2>New Advising Session Form (Placeholder)</h2>
+        <p>
+            This storyboard section represents the form for creating a new 
+            advising session. No real submission happens here.
+        </p>
+
+        <ul>
+            <li>Student selection dropdown</li>
+            <li>Advisor selection dropdown</li>
+            <li>Date and time picker</li>
+            <li>Session type (Academic Plan, Follow-up, Warning, Graduation Review)</li>
+            <li>Risk level selection (Low, Medium, High)</li>
+            <li>Notes / Comments text area</li>
+            <li><strong>Save Session</strong> button</li>
+        </ul>
+
+        <p>
+            This form will send data to the <em>advising_sessions</em> table in the real system.
+        </p>
+    </div>
+
+    <!-- Storyboard explanation -->
+    <div class="section-box">
+        <h2>Storyboard Note</h2>
+        <p>
+            In the final application, this page would validate input fields, save
+            the session to the database, and redirect the advisor back to the
+            session list. For the storyboard, it only shows the layout and flow.
+        </p>
+    </div>
+
+    <!-- Navigation -->
+    <p>
+        <a href="list.html">Back to Sessions List</a><br>
+        <a href="../dashboard/dashboard.html">Back to Dashboard</a><br>
+        <a href="../index.html">Back to Sitemap</a>
+    </p>
+
+</main>
+
+<footer style="margin-top: 30px; font-size: 0.8rem; color: #555;">
+    <p>Academic Advising &amp; Progress Tracking System – Create Session Storyboard</p>
+</footer>
+
+</body>
+</html>
+

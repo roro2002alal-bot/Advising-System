@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration – Academic Advising System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Shared stylesheet -->
+    <link rel="stylesheet" href="../assets/styles.css">
+
+    <!-- Safety styles in case styles.css is empty -->
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.5; }
+        header { border-bottom: 1px solid #ccc; margin-bottom: 15px; padding-bottom: 8px; }
+        nav a { margin-right: 10px; text-decoration: none; font-size: 0.9rem; }
+        nav a:hover { text-decoration: underline; }
+        .breadcrumb { font-size: 0.85rem; color: #666; margin-bottom: 10px; }
+        .section-box { border: 1px dashed #999; padding: 15px; margin: 15px 0; }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Student Registration</h1>
+    <p>
+        Registration page for new students (and optionally advisors) to create an
+        account in the Academic Advising &amp; Progress Tracking System.
+    </p>
+
+    <!-- Global navigation -->
+    <nav>
+        <a href="../index.html">Sitemap</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="../dashboard/dashboard.html">Dashboard</a>
+        <a href="../module1/list.html">Advising Sessions (CRUD)</a>
+        <a href="../module2/list.html">Degree Plans</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">Home &gt; Authentication &gt; Registration</div>
+
+    <!-- Main registration placeholder -->
+    <div class="section-box">
+        <h2>Registration Form (Placeholder)</h2>
+        <p>
+            This section represents the registration form the real system will use
+            to collect basic information about new users.
+        </p>
+
+        <ul>
+            <li>Full name field</li>
+            <li>University email address</li>
+            <li>Student ID (or Employee ID for advisors)</li>
+            <li>Major / Department selection</li>
+            <li>Role selection (Student / Advisor)</li>
+            <li>Password and Confirm Password fields</li>
+            <li><strong>Register</strong> button</li>
+        </ul>
+    </div>
+
+    <!-- Additional information / storyboard explanation -->
+    <div class="section-box">
+        <h2>Account &amp; Advising Context</h2>
+        <p>
+            In the actual application, a newly registered student would be linked
+            to an academic advisor and their degree plan. The registration data
+            here would be stored in tables such as <em>users</em> and <em>students</em>
+            in the database, and later used to display progress and advising
+            information on the dashboard.
+        </p>
+    </div>
+
+    <!-- Storyboard Note -->
+    <div class="section-box">
+        <h2>Storyboard Note</h2>
+        <p>
+            This is a static storyboard page only. No real account creation or
+            validation happens here. The goal is to show where registration fields,
+            buttons, and messages will appear in the final Academic Advising &amp;
+            Progress Tracking web system.
+        </p>
+    </div>
+
+    <p>
+        <a href="../index.html">Back to Sitemap</a><br>
+        <a href="../dashboard/dashboard.html">Back to Dashboard</a>
+    </p>
+
+</main>
+
+<footer style="margin-top: 30px; font-size: 0.8rem; color: #555;">
+    <p>Academic Advising &amp; Progress Tracking System – Registration Storyboard</p>
+</footer>
+
+</body>
+</html>
+

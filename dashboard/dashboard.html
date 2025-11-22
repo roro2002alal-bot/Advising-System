@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advising Dashboard – Academic Advising System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main shared stylesheet -->
+    <link rel="stylesheet" href="../assets/styles.css">
+    <style>
+        /* Minimal safety styles in case styles.css is empty */
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.5; }
+        header { border-bottom: 1px solid #ccc; margin-bottom: 15px; padding-bottom: 8px; }
+        nav a { margin-right: 10px; text-decoration: none; font-size: 0.9rem; }
+        nav a:hover { text-decoration: underline; }
+        .breadcrumb { font-size: 0.85rem; color: #666; margin-bottom: 10px; }
+        .kpi-row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 15px; }
+        .kpi-box {
+            border: 1px solid #ccc;
+            padding: 12px;
+            flex: 1 1 200px;
+            box-sizing: border-box;
+        }
+        .chart-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .quick-links a { display: block; margin: 4px 0; }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Advising Dashboard</h1>
+    <p>
+        This dashboard provides an overview of key indicators for the Academic Advising 
+        &amp; Progress Tracking System, such as total advisees, at-risk students, and upcoming sessions.
+    </p>
+
+    <!-- Global navigation bar (same structure as index.html) -->
+    <nav>
+        <a href="../index.html">Sitemap</a>
+        <a href="../auth/login.html">Login</a>
+        <a href="../auth/register.html">Register</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="../module1/list.html">Advising Sessions (CRUD)</a>
+        <a href="../module2/list.html">Degree Plans</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">Home &gt; Dashboard</div>
+
+    <!-- KPI Section -->
+    <section>
+        <h2>Key Performance Indicators (KPIs)</h2>
+        <p>
+            These boxes are placeholders for the main advising metrics the real system will show.
+        </p>
+
+        <div class="kpi-row">
+            <div class="kpi-box">
+                <h3>Total Advisees</h3>
+                <p>Placeholder value showing the number of students assigned to this advisor.</p>
+            </div>
+
+            <div class="kpi-box">
+                <h3>Students at Risk</h3>
+                <p>Placeholder value for students flagged as “at risk” based on GPA or credits.</p>
+            </div>
+
+            <!-- Extra KPI (optional but nice) -->
+            <div class="kpi-box">
+                <h3>Upcoming Advising Sessions</h3>
+                <p>Placeholder value for the number of scheduled advising sessions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chart Placeholder -->
+    <section class="chart-box">
+        <h2>Progress Chart Placeholder</h2>
+        <p>
+            In the real system, this area will display a chart such as:
+        </p>
+        <ul>
+            <li>GPA trend for a selected student over multiple semesters, or</li>
+            <li>Number of advising sessions per month, or</li>
+            <li>Distribution of students by risk level.</li>
+        </ul>
+    </section>
+
+    <!-- Quick Navigation Links -->
+    <section>
+        <h2>Quick Navigation</h2>
+        <p>Shortcuts to the most common tasks for advisors.</p>
+        <div class="quick-links">
+            <a href="../module1/list.html">View All Advising Sessions</a>
+            <a href="../module1/create.html">Schedule New Advising Session</a>
+            <a href="../module2/list.html">View Student Degree Plans</a>
+            <a href="../module2/create.html">Create New Degree Plan</a>
+        </div>
+    </section>
+
+    <!-- Context Section (optional but gives extra clarity) -->
+    <section>
+        <h2>Dashboard Purpose (Storyboard Note)</h2>
+        <p>
+            This page is a static storyboard. It does not contain real data or live charts,
+            but it clearly indicates where KPIs, charts, and quick actions will appear
+            in the final Academic Advising &amp; Progress Tracking application.
+        </p>
+    </section>
+
+    <p>
+        <a href="../index.html">Back to Sitemap</a>
+    </p>
+
+</main>
+
+<footer style="margin-top: 30px; font-size: 0.8rem; color: #555;">
+    <p>Academic Advising &amp; Progress Tracking System – Dashboard Storyboard</p>
+</footer>
+
+</body>
+</html>
+

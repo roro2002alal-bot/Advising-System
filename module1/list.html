@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advising Sessions – List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Shared stylesheet -->
+    <link rel="stylesheet" href="../assets/styles.css">
+
+    <!-- Safety styles in case styles.css is empty -->
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.5; }
+        header { border-bottom: 1px solid #ccc; margin-bottom: 15px; padding-bottom: 8px; }
+        nav a { margin-right: 10px; text-decoration: none; font-size: 0.9rem; }
+        nav a:hover { text-decoration: underline; }
+        .breadcrumb { font-size: 0.85rem; color: #666; margin-bottom: 10px; }
+        .section-box { border: 1px dashed #999; padding: 15px; margin: 15px 0; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ccc; padding: 8px; font-size: 0.9rem; }
+        th { background-color: #f5f5f5; text-align: left; }
+        .actions a { margin-right: 8px; }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Advising Sessions – List</h1>
+    <p>
+        This page lists advising sessions between students and academic advisors
+        in the Academic Advising &amp; Progress Tracking System.
+    </p>
+
+    <!-- Global navigation -->
+    <nav>
+        <a href="../index.html">Sitemap</a>
+        <a href="../auth/login.html">Login</a>
+        <a href="../auth/register.html">Register</a>
+        <a href="../dashboard/dashboard.html">Dashboard</a>
+        <a href="list.html">Advising Sessions (CRUD)</a>
+        <a href="../module2/list.html">Degree Plans</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">Home &gt; Advising Sessions &gt; List</div>
+
+    <!-- Main list placeholder -->
+    <div class="section-box">
+        <h2>Advising Sessions Table (Placeholder)</h2>
+        <p>
+            This table is a storyboard placeholder representing how advising sessions
+            will be displayed in the real system.
+        </p>
+
+        <!-- Example static table just for layout -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Session ID</th>
+                    <th>Student Name</th>
+                    <th>Advisor Name</th>
+                    <th>Date</th>
+                    <th>Risk Level</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>AS-001</td>
+                    <td>Example Student</td>
+                    <td>Advisor Example</td>
+                    <td>2025-01-15</td>
+                    <td>Medium</td>
+                    <td class="actions">
+                        <!-- These links show navigation flow only -->
+                        <a href="details.html">Details</a>
+                        <a href="edit.html">Edit</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AS-002</td>
+                    <td>Another Student</td>
+                    <td>Advisor Example</td>
+                    <td>2025-02-02</td>
+                    <td>High</td>
+                    <td class="actions">
+                        <a href="details.html">Details</a>
+                        <a href="edit.html">Edit</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            In the real application, this table would be populated from the
+            <em>advising_sessions</em>, <em>students</em>, and <em>advisors</em> tables
+            in the database.
+        </p>
+    </div>
+
+    <!-- Actions / Navigation -->
+    <div class="section-box">
+        <h2>Common Actions</h2>
+        <p>Storyboards for the main actions related to advising sessions:</p>
+        <ul>
+            <li><a href="create.html">Schedule New Advising Session (Create)</a></li>
+            <li><a href="details.html">View Session Details (Read)</a></li>
+            <li><a href="edit.html">Edit Existing Session (Update)</a></li>
+            <li>Delete action could be represented by a button or icon in the Actions column.</li>
+        </ul>
+    </div>
+
+    <p>
+        <a href="../dashboard/dashboard.html">Back to Dashboard</a><br>
+        <a href="../index.html">Back to Sitemap</a>
+    </p>
+
+</main>
+
+<footer style="margin-top: 30px; font-size: 0.8rem; color: #555;">
+    <p>Academic Advising &amp; Progress Tracking System – Advising Sessions List Storyboard</p>
+</footer>
+
+</body>
+</html>

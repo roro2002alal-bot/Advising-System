@@ -1,0 +1,323 @@
+/* =====================================
+   Academic Advising & Progress Tracking System
+   FINAL PROFESSIONAL UI THEME (FULL CSS)
+   ===================================== */
+
+/* Color Palette */
+:root {
+    --primary: #0b63ce;          /* stronger blue */
+    --primary-light: #d6e7ff;
+    --primary-dark: #063674;
+    --accent: #2e7d32;           /* green accent */
+    --bg: #e3edf9;
+    --border: #c2c9dd;
+    --text-main: #111827;
+    --text-muted: #6b7280;
+    --white: #ffffff;
+}
+
+/* Reset / Base */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    background: radial-gradient(circle at top, #f5f9ff 0, var(--bg) 55%, #dde3f0 100%);
+    color: var(--text-main);
+}
+
+/* Centered App Container */
+body > header,
+body > main,
+body > footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+
+/* HEADER (Top Card) */
+body > header {
+    background: var(--white);
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.18);
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    border-bottom: none;
+    padding-top: 18px;
+    padding-bottom: 6px;
+}
+
+header h1 {
+    margin: 0 0 4px;
+    font-size: 1.7rem;
+    color: var(--primary-dark);
+}
+
+header p {
+    margin: 0 0 12px;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+/* Top Navigation Chips */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 6px 0 8px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 0.86rem;
+    color: var(--primary-dark);
+    background: var(--primary-light);
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    transition: all 0.15s ease;
+}
+
+nav a:hover {
+    background: var(--primary-dark);
+    color: var(--white);
+    border-color: var(--primary-dark);
+    box-shadow: 0 3px 8px rgba(15, 23, 42, 0.25);
+    transform: translateY(-1px);
+}
+
+/* MAIN CONTENT CONTAINER */
+body > main {
+    background: var(--white);
+    border-left: 1px solid rgba(148, 163, 184, 0.4);
+    border-right: 1px solid rgba(148, 163, 184, 0.4);
+    padding-top: 14px;
+    padding-bottom: 18px;
+}
+
+main h2 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+    color: var(--primary-dark);
+}
+
+main h3 {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-size: 1.05rem;
+    color: var(--primary);
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+/* SECTION CARDS */
+.section-box {
+    background: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    padding: 14px 16px;
+    margin: 14px 0;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+/* Colored top line */
+.section-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+}
+
+/* Hover lift effect */
+.section-box:hover {
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.16);
+    transform: translateY(-1px);
+}
+
+/* Lists inside sections */
+.section-box ul {
+    padding-left: 18px;
+    margin: 4px 0;
+}
+
+.section-box li {
+    font-size: 0.93rem;
+    margin-bottom: 4px;
+}
+
+/* KPI Dashboard Boxes */
+.kpi-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.kpi-box {
+    background: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    padding: 12px 14px;
+    flex: 1 1 230px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.kpi-box h3 {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+.kpi-box p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.kpi-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+}
+
+/* Chart Area */
+.chart-box,
+.chart {
+    background: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    padding: 14px 16px;
+    margin: 14px 0;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+/* TABLES (List pages) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 0.9rem;
+}
+
+th, td {
+    border: 1px solid var(--border);
+    padding: 8px 10px;
+}
+
+th {
+    background: #eef2ff;
+    text-align: left;
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+tbody tr:hover {
+    background: #e0f2fe;
+}
+
+/* Action links */
+.actions a {
+    margin-right: 6px;
+    font-size: 0.86rem;
+}
+
+/* DETAILS PAGE LAYOUT */
+.detail-row {
+    margin: 4px 0;
+    font-size: 0.93rem;
+}
+
+.label {
+    font-weight: 600;
+    color: var(--text-muted);
+    display: inline-block;
+    min-width: 150px;
+}
+
+/* BUTTON LINKS (Back buttons, etc.) */
+.back-links {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.back-links .btn-link {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 0.9rem;
+    text-decoration: none;
+    border: 1px solid var(--primary-dark);
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.25);
+    transition: all 0.15s ease;
+}
+
+.back-links .btn-link:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(15, 23, 42, 0.35);
+}
+
+/* FOOTER */
+footer {
+    background: var(--white);
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.18);
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    border-top: none;
+    padding: 10px 0 16px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-align: left;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    body > header,
+    body > main,
+    body > footer {
+        padding: 0 14px;
+    }
+
+    nav {
+        gap: 6px;
+    }
+
+    nav a {
+        font-size: 0.78rem;
+        padding: 5px 9px;
+    }
+
+    .label {
+        display: block;
+        margin-bottom: 2px;
+    }
+}

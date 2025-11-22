@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Advising Session – Academic Advising System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Shared stylesheet -->
+    <link rel="stylesheet" href="../assets/styles.css">
+
+    <!-- Safety styling in case styles.css is empty -->
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.5; }
+        header { border-bottom: 1px solid #ccc; margin-bottom: 15px; padding-bottom: 8px; }
+        nav a { margin-right: 10px; text-decoration: none; font-size: 0.9rem; }
+        nav a:hover { text-decoration: underline; }
+        .breadcrumb { font-size: 0.85rem; color: #666; margin-bottom: 10px; }
+        .section-box { border: 1px dashed #999; padding: 15px; margin: 15px 0; }
+        ul { margin-left: 20px; }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Edit Advising Session</h1>
+    <p>
+        This page represents the form an academic advisor would use to update an
+        existing advising session in the Academic Advising &amp; Progress Tracking System.
+    </p>
+
+    <!-- Global navigation -->
+    <nav>
+        <a href="../index.html">Sitemap</a>
+        <a href="../auth/login.html">Login</a>
+        <a href="../auth/register.html">Register</a>
+        <a href="../dashboard/dashboard.html">Dashboard</a>
+        <a href="list.html">Advising Sessions (CRUD)</a>
+        <a href="../module2/list.html">Degree Plans</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">Home &gt; Advising Sessions &gt; Edit</div>
+
+    <!-- Edit form placeholder -->
+    <div class="section-box">
+        <h2>Edit Advising Session Form (Placeholder)</h2>
+        <p>
+            This storyboard section shows the structure of the form used to edit an
+            existing session. The fields would be pre-filled with the current data.
+        </p>
+
+        <ul>
+            <li>Read-only Session ID</li>
+            <li>Student selection dropdown (pre-selected)</li>
+            <li>Advisor selection dropdown (pre-selected)</li>
+            <li>Date and time picker (existing value)</li>
+            <li>Session type selection (existing value)</li>
+            <li>Risk level selection (existing value)</li>
+            <li>Notes / Comments text area with current notes</li>
+            <li><strong>Save Changes</strong> button</li>
+            <li><strong>Cancel</strong> button (returns to details or list)</li>
+        </ul>
+
+        <p>
+            In the real system, submitting this form would update the corresponding
+            record in the <em>advising_sessions</em> table.
+        </p>
+    </div>
+
+    <!-- Storyboard explanation -->
+    <div class="section-box">
+        <h2>Storyboard Note</h2>
+        <p>
+            No real update occurs on this storyboard page. Its purpose is to show
+            where editable fields and action buttons will appear, and to demonstrate
+            the flow from <strong>List → Details → Edit → List</strong> within
+            the advising sessions module.
+        </p>
+    </div>
+
+    <!-- Navigation -->
+    <p>
+        <a href="details.html">Back to Session Details</a><br>
+        <a href="list.html">Back to Sessions List</a><br>
+        <a href="../dashboard/dashboard.html">Back to Dashboard</a><br>
+        <a href="../index.html">Back to Sitemap</a>
+    </p>
+
+</main>
+
+<footer style="margin-top: 30px; font-size: 0.8rem; color: #555;">
+    <p>Academic Advising &amp; Progress Tracking System – Edit Session Storyboard</p>
+</footer>
+
+</body>
+</html>
